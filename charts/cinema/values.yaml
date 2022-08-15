@@ -8,7 +8,7 @@ mongodb:
   enabled: true
 
   auth:
-    enabled: true
+    enabled: false
   persistence:
     enabled: true
 
@@ -23,6 +23,9 @@ website:
     - "http://cinema-showtimes/api/showtimes/"
     - "-bookingsAPI"
     - "http://cinema-bookings/api/bookings/"
+  service:
+    type: NodePort
+
 
 # Cinema users values
 users:
