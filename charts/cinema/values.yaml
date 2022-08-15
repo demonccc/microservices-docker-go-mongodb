@@ -32,21 +32,32 @@ users:
   args:
     - "-mongoURI"
     - "mongodb://cinema-mongodb:27017/"
+  service:
+    type: NodePort
+
 
 # Cinema movies values
 movies:
   args:
     - "-mongoURI"
     - "mongodb://cinema-mongodb:27017/"
+  service:
+    type: NodePort
+
 
 # Cinema showtimes values
 showtimes:
   args:
     - "-mongoURI"
     - "mongodb://cinema-mongodb:27017/"
+  service:
+    type: NodePort
+
 
 # Cinema bookings values
 bookings:
   args:
     - "-mongoURI"
     - "mongodb://cinema-mongodb:27017/"
+  service:
+    type: NodePort
